@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-13T11:10:03 IST" name="Default suite" finished-at="2024-02-13T11:10:08 IST" duration-ms="4964">
+    <groups>
+    </groups>
+    <test started-at="2024-02-13T11:10:03 IST" name="Default test" finished-at="2024-02-13T11:10:08 IST" duration-ms="4964">
+      <class name="testScripts.ArticleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.ArticleTest@1c65121]" started-at="2024-02-13T11:10:03 IST" name="setup" finished-at="2024-02-13T11:10:05 IST" duration-ms="1580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:1, instance:testScripts.ArticleTest@1c65121]" started-at="2024-02-13T11:10:05 IST" name="loginTest" finished-at="2024-02-13T11:10:05 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="newArticleTest()[pri:2, instance:testScripts.ArticleTest@1c65121]" started-at="2024-02-13T11:10:05 IST" name="newArticleTest" finished-at="2024-02-13T11:10:06 IST" duration-ms="1389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newArticleTest -->
+        <test-method signature="updateArticleTest()[pri:3, instance:testScripts.ArticleTest@1c65121]" started-at="2024-02-13T11:10:06 IST" name="updateArticleTest" finished-at="2024-02-13T11:10:07 IST" duration-ms="906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateArticleTest -->
+        <test-method signature="deleteArticleTest()[pri:4, instance:testScripts.ArticleTest@1c65121]" started-at="2024-02-13T11:10:07 IST" name="deleteArticleTest" finished-at="2024-02-13T11:10:08 IST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteArticleTest -->
+      </class> <!-- testScripts.ArticleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
