@@ -39,9 +39,13 @@ public class DeleteArticlePage {
 		Alert alert=driver.switchTo().alert();
 		Assert.assertEquals(alert.getText(), "Want to delete the article?");
 		alert.accept();
-     	Assert.assertEquals(chck.getText(), "Articles not available.");
+     	//Assert.assertEquals(chck.getText(), "Articles not available.");
 		
 		
+	}
+	public String deleteCheck()
+	{
+		return chck.getText();
 	}
 	
 

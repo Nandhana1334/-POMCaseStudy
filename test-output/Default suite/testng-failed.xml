@@ -5,7 +5,13 @@
     <classes>
       <class name="testScripts.ArticleTest">
         <methods>
+          <include name="setupExtent"/>
+          <include name="loginTest"/>
+          <include name="updateArticleTest"/>
+          <include name="finishExtent"/>
           <include name="setup"/>
+          <include name="teardown"/>
+          <include name="newArticleTest"/>
           <include name="deleteArticleTest"/>
         </methods>
       </class> <!-- testScripts.ArticleTest -->

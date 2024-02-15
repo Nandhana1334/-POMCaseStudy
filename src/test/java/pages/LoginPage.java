@@ -21,22 +21,29 @@ public class LoginPage {
 	@FindBy(xpath ="//button[contains(text(),'Login')]")
 	WebElement login;
 	
-//	@FindBy(xpath="//a[@href='#@Nandhana']")
-//	WebElement chck;
+	@FindBy(xpath="//img[@alt='Nandhana']")
+	WebElement chckName;
+	
+	
 //	
 	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
-	
-	public void clickLogin()
+	public boolean loginName()
+	{
+		boolean s= chckName.isDisplayed();
+		
+		return s;
+	}
+	public void clickLogin(String str1,String str2)
 	{
 		loginButton.click();
-		email.sendKeys("nandhana@gmail.com");
-		password.sendKeys("nandh");
+		email.sendKeys(str1);
+		password.sendKeys(str2);
 		login.click();
 //		boolean check = chck.isDisplayed();
-//		Assert.assertTrue(check);
+//		Assert.assertTrue(check);  "nandhana@gmail.com"  "nandh"
 		
 		
 		

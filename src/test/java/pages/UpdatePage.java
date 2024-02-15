@@ -39,13 +39,19 @@ public class UpdatePage {
 		PageFactory.initElements(driver,this);
 	}
 	
-	public void updateArticle() { 
+	public void updateArticle(String str1,String str2) { 
 		edit.click(); 	 	 
 		articleTitle.clear(); 	 	
-		articleTitle.sendKeys("Article2"); 	 	
+		articleTitle.sendKeys(str1); 	 	
 		articleAbout.clear(); 	 	
-		articleAbout.sendKeys("This is sample article2"); 	 
+		articleAbout.sendKeys(str2); 	 
 		updateBtn.click();
-		Assert.assertEquals(CheckBtn.getText(),"Article2");
+		
 	}
+	
+	public String updatedName()
+	{
+		return CheckBtn.getText();
+	}
+	//"Article2" "This is sample article2"
 }

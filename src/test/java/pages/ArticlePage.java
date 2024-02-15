@@ -28,10 +28,10 @@ public class ArticlePage {
 	
 	@FindBy(xpath="//button[@type='submit']") 	 
 	WebElement btn;
+//	
 	
-	@FindBy(xpath="//h1[contains(text(),'Article1')]")
-    WebElement chk;
-	
+	@FindBy(xpath="//h1[contains(text(),'Article4')]")
+    WebElement chkHeader;
 	
 	
 	public ArticlePage(WebDriver driver)
@@ -39,18 +39,24 @@ public class ArticlePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void publishArticle()
+	public void publishArticle(String str1,String str2,String str3)
 	{
 		newArticle.click();
-		
-		title.sendKeys("Article1");
-		desc.sendKeys("This is a sample article");
-		textArea.sendKeys("This is a sample article");
+		title.sendKeys(str1);
+		desc.sendKeys(str2);
+		textArea.sendKeys(str3);
 		tags.sendKeys("");
 		btn.click();
-		
-		Assert.assertEquals(chk.getText(),"Article1");
-		}
+		//return chk.getText();
+		//Assert.assertEquals(chk.getText(),"Article1"); "Article4"  "This is a sample article"   "This is a sample article"
+	}
+	
+	
+	
+	public String articleName()
+	{
+		return chkHeader.getText();
+	}
 	
 	
 }
