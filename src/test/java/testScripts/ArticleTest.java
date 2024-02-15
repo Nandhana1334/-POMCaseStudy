@@ -78,7 +78,7 @@ public class ArticleTest {
 	@Test(priority = 2)
 	public void newArticleTest()
 	{
-		extentTest = extentReports.createTest("New Article Test");
+		extentTest = extentReports.createTest("Publish Article Test");
 		articlePage.publishArticle("Article4","This is a sample article","This is a sample article");
  		Assert.assertEquals(articlePage.articleName(),"Article4"); //"Article4"  "This is a sample article"   "This is a sample article"
 		
