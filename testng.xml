@@ -2,8 +2,7 @@
 
 <suite name="SampleSuite">
 	<test name ="ModuleOneTest">
-  <!--<test thread-count="5" name="ModuleTest">
-	 <test name ="ModuleOneTest">-->
+  
 	 <classes>
 		
 		 <class name ="testScripts.ArticleTest"/>
