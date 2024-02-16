@@ -1,81 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-15T10:19:28 IST" name="Default suite" finished-at="2024-02-15T10:19:37 IST" duration-ms="9483">
+  <suite started-at="2024-02-16T11:06:04 IST" name="Default suite" finished-at="2024-02-16T11:06:19 IST" duration-ms="14561">
     <groups>
     </groups>
-    <test started-at="2024-02-15T10:19:28 IST" name="Default test" finished-at="2024-02-15T10:19:37 IST" duration-ms="9483">
+    <test started-at="2024-02-16T11:06:04 IST" name="Default test" finished-at="2024-02-16T11:06:19 IST" duration-ms="14561">
       <class name="testScripts.ArticleTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:28 IST" name="setup" finished-at="2024-02-15T10:19:30 IST" duration-ms="1973" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:04 IST" name="setup" finished-at="2024-02-16T11:06:07 IST" duration-ms="2667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:30 IST" name="setupExtent" finished-at="2024-02-15T10:19:31 IST" duration-ms="789" status="PASS">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:07 IST" name="setupExtent" finished-at="2024-02-16T11:06:08 IST" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtent -->
-        <test-method signature="loginTest()[pri:1, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:31 IST" name="loginTest" finished-at="2024-02-15T10:19:32 IST" duration-ms="1375" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:1, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:08 IST" name="invalidLoginTest" finished-at="2024-02-16T11:06:09 IST" duration-ms="1564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:09 IST" name="teardown" finished-at="2024-02-16T11:06:09 IST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=ArticleTest.invalidLoginTest()[pri:1, instance:testScripts.ArticleTest@5215cd9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="loginTest()[pri:2, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:09 IST" name="loginTest" finished-at="2024-02-16T11:06:11 IST" duration-ms="1484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:32 IST" name="teardown" finished-at="2024-02-15T10:19:32 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:11 IST" name="teardown" finished-at="2024-02-16T11:06:11 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=ArticleTest.loginTest()[pri:1, instance:testScripts.ArticleTest@530a8454] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=ArticleTest.loginTest()[pri:2, instance:testScripts.ArticleTest@5215cd9a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="newArticleTest()[pri:2, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:32 IST" name="newArticleTest" finished-at="2024-02-15T10:19:34 IST" duration-ms="2043" status="PASS">
+        <test-method signature="duplicateArticleTest()[pri:3, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:11 IST" name="duplicateArticleTest" finished-at="2024-02-16T11:06:13 IST" duration-ms="1682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duplicateArticleTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:13 IST" name="teardown" finished-at="2024-02-16T11:06:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=duplicateArticleTest status=SUCCESS method=ArticleTest.duplicateArticleTest()[pri:3, instance:testScripts.ArticleTest@5215cd9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="newArticleTest()[pri:4, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:13 IST" name="newArticleTest" finished-at="2024-02-16T11:06:15 IST" duration-ms="2607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newArticleTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:34 IST" name="teardown" finished-at="2024-02-15T10:19:34 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:15 IST" name="teardown" finished-at="2024-02-16T11:06:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=newArticleTest status=SUCCESS method=ArticleTest.newArticleTest()[pri:2, instance:testScripts.ArticleTest@530a8454] output={null}]]]>
+                <![CDATA[[TestResult name=newArticleTest status=SUCCESS method=ArticleTest.newArticleTest()[pri:4, instance:testScripts.ArticleTest@5215cd9a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="updateArticleTest()[pri:3, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:34 IST" name="updateArticleTest" finished-at="2024-02-15T10:19:36 IST" duration-ms="1615" status="PASS">
+        <test-method signature="updateArticleTest()[pri:5, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:15 IST" name="updateArticleTest" finished-at="2024-02-16T11:06:17 IST" duration-ms="1599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateArticleTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:36 IST" name="teardown" finished-at="2024-02-15T10:19:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:17 IST" name="teardown" finished-at="2024-02-16T11:06:17 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateArticleTest status=SUCCESS method=ArticleTest.updateArticleTest()[pri:3, instance:testScripts.ArticleTest@530a8454] output={null}]]]>
+                <![CDATA[[TestResult name=updateArticleTest status=SUCCESS method=ArticleTest.updateArticleTest()[pri:5, instance:testScripts.ArticleTest@5215cd9a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="deleteArticleTest()[pri:4, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:36 IST" name="deleteArticleTest" finished-at="2024-02-15T10:19:36 IST" duration-ms="847" status="PASS">
+        <test-method signature="deleteArticleTest()[pri:6, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:17 IST" name="deleteArticleTest" finished-at="2024-02-16T11:06:18 IST" duration-ms="1086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteArticleTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:36 IST" name="teardown" finished-at="2024-02-15T10:19:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:18 IST" name="teardown" finished-at="2024-02-16T11:06:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteArticleTest status=SUCCESS method=ArticleTest.deleteArticleTest()[pri:4, instance:testScripts.ArticleTest@530a8454] output={null}]]]>
+                <![CDATA[[TestResult name=deleteArticleTest status=SUCCESS method=ArticleTest.deleteArticleTest()[pri:6, instance:testScripts.ArticleTest@5215cd9a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="finishExtent()[pri:0, instance:testScripts.ArticleTest@530a8454]" started-at="2024-02-15T10:19:36 IST" name="finishExtent" finished-at="2024-02-15T10:19:37 IST" duration-ms="722" status="PASS">
+        <test-method is-config="true" signature="finishExtent()[pri:0, instance:testScripts.ArticleTest@5215cd9a]" started-at="2024-02-16T11:06:18 IST" name="finishExtent" finished-at="2024-02-16T11:06:19 IST" duration-ms="799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishExtent -->

@@ -24,30 +24,36 @@ public class LoginPage {
 	@FindBy(xpath="//img[@alt='Nandhana']")
 	WebElement chckName;
 	
+	@FindBy(xpath="//ul[@class='error-messages']//li[text()='Wrong email/password combination']")
+    WebElement invalidmsg;
 	
 //	
 	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
-	public boolean loginName()
+	public boolean nameAfterLogin()
 	{
-		boolean s= chckName.isDisplayed();
+		boolean nameDisplayed= chckName.isDisplayed();
 		
-		return s;
+		return nameDisplayed;
 	}
-	public void clickLogin(String str1,String str2)
+	public void login(String mailId,String pwd)
 	{
 		loginButton.click();
-		email.sendKeys(str1);
-		password.sendKeys(str2);
+		email.clear();
+		
+		email.sendKeys(mailId);
+		password.clear();
+		password.sendKeys(pwd);
 		login.click();
-//		boolean check = chck.isDisplayed();
-//		Assert.assertTrue(check);  "nandhana@gmail.com"  "nandh"
-		
-		
-		
+
 	}
+	
+	public String inValidMsg()
+		{
+			return invalidmsg.getText();
+		}
 	
 
 }

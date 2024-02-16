@@ -32,26 +32,26 @@ public class UpdatePage {
 	WebElement globalfeed;
 	
 	@FindBy(xpath="//h1[contains(text(),'Article2')]")
-    WebElement CheckBtn;
+    WebElement updatedTitle;
 	
 	public UpdatePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
 	}
 	
-	public void updateArticle(String str1,String str2) { 
+	public void updateArticle(String strTitle,String strAbout) { 
 		edit.click(); 	 	 
 		articleTitle.clear(); 	 	
-		articleTitle.sendKeys(str1); 	 	
+		articleTitle.sendKeys(strTitle); 	 	
 		articleAbout.clear(); 	 	
-		articleAbout.sendKeys(str2); 	 
+		articleAbout.sendKeys(strAbout); 	 
 		updateBtn.click();
 		
 	}
 	
 	public String updatedName()
 	{
-		return CheckBtn.getText();
+		return updatedTitle.getText();
 	}
 	//"Article2" "This is sample article2"
 }

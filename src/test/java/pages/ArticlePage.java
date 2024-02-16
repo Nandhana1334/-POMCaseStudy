@@ -30,8 +30,11 @@ public class ArticlePage {
 	WebElement btn;
 //	
 	
-	@FindBy(xpath="//h1[contains(text(),'Article4')]")
+	@FindBy(xpath="//h1[contains(text(),'Article5')]")
     WebElement chkHeader;
+	
+	@FindBy(xpath="//span[text()='Title already exists.. ']")
+	WebElement invalidMsg;
 	
 	
 	public ArticlePage(WebDriver driver)
@@ -39,23 +42,27 @@ public class ArticlePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void publishArticle(String str1,String str2,String str3)
+	public void publishArticle(String strTitle,String strDesc,String strtextArea)
 	{
 		newArticle.click();
-		title.sendKeys(str1);
-		desc.sendKeys(str2);
-		textArea.sendKeys(str3);
+		title.clear();
+		title.sendKeys(strTitle);
+		desc.clear();
+		desc.sendKeys(strDesc);
+		textArea.clear();
+		textArea.sendKeys(strtextArea);
 		tags.sendKeys("");
 		btn.click();
 		//return chk.getText();
 		//Assert.assertEquals(chk.getText(),"Article1"); "Article4"  "This is a sample article"   "This is a sample article"
 	}
-	
-	
-	
 	public String articleName()
 	{
 		return chkHeader.getText();
+	}
+	public String duplicateTitle()
+	{
+		return invalidMsg.getText();
 	}
 	
 	

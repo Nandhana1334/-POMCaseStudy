@@ -66,25 +66,42 @@ public class ArticleTest {
 		  TestBase.openUrl("https://conduit-realworld-example-app.fly.dev/");
 	  }
 	@Test(priority = 1)
+	public void invalidLoginTest()
+	{
+		extentTest = extentReports.createTest("Invalid Login Test");
+		loginPage.login("nandhana@gmail.com","nandha");
+		Assert.assertEquals(loginPage.inValidMsg(),"Wrong email/password combination");
+		
+	}
+	
+	@Test(priority = 2)
 	public void loginTest()
 	{
-		extentTest = extentReports.createTest("Login Test");
-		 loginPage.clickLogin("nandhana@gmail.com","nandh");
-		 boolean s= loginPage.loginName();
+		 extentTest = extentReports.createTest("Login Test");
+		 loginPage.login("nandhana@gmail.com","nandh");
+		 boolean displayedName= loginPage.nameAfterLogin();
 		 
-		 Assert.assertTrue(s);
+		 Assert.assertTrue(displayedName);
 		 
 	}
-	@Test(priority = 2)
+	
+	@Test(priority = 3)
+	public void duplicateArticleTest()
+	{
+		extentTest = extentReports.createTest("Duplicate Article Test");
+		articlePage.publishArticle("Article4","This is a sample article","This is a sample article");
+ 		Assert.assertEquals(articlePage.duplicateTitle(),"Title already exists.."); 
+	}
+	@Test(priority = 4)
 	public void newArticleTest()
 	{
 		extentTest = extentReports.createTest("Publish Article Test");
-		articlePage.publishArticle("Article4","This is a sample article","This is a sample article");
- 		Assert.assertEquals(articlePage.articleName(),"Article4"); //"Article4"  "This is a sample article"   "This is a sample article"
+		articlePage.publishArticle("Article5","This is a sample article","This is a sample article");
+ 		Assert.assertEquals(articlePage.articleName(),"Article5"); //"Article4"  "This is a sample article"   "This is a sample article"
 		
 		
 	}
-	@Test(priority = 3)
+	@Test(priority = 5)
 	public void updateArticleTest()
 	{
 		extentTest = extentReports.createTest("Update Article Test1");
@@ -92,7 +109,7 @@ public class ArticleTest {
 		Assert.assertEquals(updatePage.updatedName(),"Article2");
 		
 	}
-	@Test(priority = 4)
+	@Test(priority = 6)
 	public void deleteArticleTest()
 	{
 		extentTest = extentReports.createTest("Delete Article Test");

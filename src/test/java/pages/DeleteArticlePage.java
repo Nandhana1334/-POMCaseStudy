@@ -22,7 +22,7 @@ public class DeleteArticlePage {
     WebElement deleteBtn;
 	
 	@FindBy(xpath="//div[contains(text(),'Articles not available.')]")
-	WebElement chck;
+	WebElement deletionText;
 	
 	public DeleteArticlePage(WebDriver driver)
 	{
@@ -45,7 +45,7 @@ public class DeleteArticlePage {
 	}
 	public String deleteCheck()
 	{
-		return chck.getText();
+		return deletionText.getText();
 	}
 	
 
